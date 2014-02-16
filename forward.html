@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+
+<head>
+	<meta charset="UTF-8">
+	<title>Modern Family Quotes App: Forward to App Store</title>
+	<meta name="author" content="Trevor D Miller">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="css/style.css">
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<link href='http://fonts.googleapis.com/css?family=Quicksand:300|Open+Sans' rel='stylesheet' type='text/css'>
+	<link rel="icon" type="image/png" href="img/icons/icon.png" />
+	<link rel="apple-touch-icon" href="img/icons/apple-touch-icon.png" />
+	<link rel="apple-touch-icon" sizes="57x57" href="img/icons/apple-touch-icon-57x57.png" />
+	<link rel="apple-touch-icon" sizes="60x60" href="img/icons/apple-touch-icon-60x60.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="img/icons/apple-touch-icon-72x72.png" />
+	<link rel="apple-touch-icon" sizes="76x76" href="img/icons/apple-touch-icon-76x76.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="img/icons/apple-touch-icon-114x114.png" />
+	<link rel="apple-touch-icon" sizes="120x120" href="img/icons/apple-touch-icon-120x120.png" />
+	<link rel="apple-touch-icon" sizes="144x144" href="img/icons/apple-touch-icon-144x144.png" />
+	<link rel="apple-touch-icon" sizes="152x152" href="img/icons/apple-touch-icon-152x152.png" />
+</head>
+
+<body>
+	<div class="custom-header full-bottom">
+		<div class="container">
+			<div class="sixteen columns">
+				<h1>Modern Family <span class="highlight">Q</span>uotes</h1>
+				<h3 class="subheader">The best quotes from Modern Family</h3>
+			</div>
+		</div>
+	</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="sixteen columns">
+				<h2>Hi there!</h2>
+				<h3 class="subheader half-bottom">You should be forwarded automatically to the correct app store if you are on a smartphone or tablet...if not, tap the app store you use to continue:</h3>
+				<div>
+					<a href="https://itunes.apple.com/us/app/modern-family-quotes/id762019925?mt=8&uo=4" target="_blank"><img src="img/apple-app-store.png" class="badge quarter-bottom apple-app-store" alt="Apple app store download" /></a>
+					<a href="https://play.google.com/store/apps/details?id=com.trevordmiller.modern_family_quotes" target="_blank"><img src="img/google-play.png" class="badge google-play-store" alt="Google Play store download" /></a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Scripts -->
+	<script>
+		// Once page has loaded, re-direct if the device is mobile
+        var isMobile;
+        window.onload = function () {
+	        // If device is andriod, direct to the google play store
+	        // If device is ios, direct to the apple app store
+	        isMobile = {
+	            Android: function() {
+	                return navigator.userAgent.match(/Android/i);
+	            },
+	            BlackBerry: function() {	
+	                return navigator.userAgent.match(/BlackBerry/i);
+	            },
+	            iOS: function() {
+	                return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+	            },
+	            Opera: function() {
+	                return navigator.userAgent.match(/Opera Mini/i);
+	            },
+	            Windows: function() {
+	                return navigator.userAgent.match(/IEMobile/i);
+	            },
+	            any: function() {
+	                return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+	            }
+	        };
+	        if( isMobile.iOS()){    
+	        	window.location.replace("itms-apps://ax.itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?type=Purple+Software&id=762019925");
+	        }
+	        if( isMobile.Android()){
+	        	window.location.replace("market://details?id=com.trevordmiller.modern_family_quotes");
+	        }
+	    };
+    </script>
+
+</body>
+</html>
