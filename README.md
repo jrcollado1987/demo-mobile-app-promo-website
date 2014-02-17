@@ -3,4 +3,4 @@ Demo Mobile App Promo Website
 
 &copy; Copyright 2013 Trevor D Miller
 
-A promo website for the "Demo Mobile App" for demonstration purposes; built with HTML5, CSS (Sass), JavaScript, and the Skeleton responsive framework.
+A website built to promote the "demo mobile app". It was built with HTML5, CSS3 (Sass), JavaScript / jQuery, and a the Skeleton basic responsive grid.
