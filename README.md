@@ -1,4 +1,4 @@
-Demo Mobile App
+Demo Mobile App Promo Website
 =============================
 
 &copy; Copyright 2013 Trevor D Miller
